@@ -1,0 +1,113 @@
+src/
+└─ main/
+   ├─ java/
+   │  └─ com/
+   │     └─ FineFish/
+   │        ├─ controller/
+   │        │  ├─ dao/
+   │        │  │  ├─ CartDAO.java
+   │        │  │  ├─ CategoryDAO.java
+   │        │  │  ├─ OrderDAO.java
+   │        │  │  ├─ ProductDAO.java
+   │        │  │  ├─ SalesDAO.java
+   │        │  │  └─ UserDAO.java
+   │        │  ├─ database/
+   │        │  │  └─ DatabaseConnection.java
+   │        │  ├─ servlet/
+   │        │  │  ├─ AddCategoryServlet.java
+   │        │  │  ├─ AddProductServlet.java
+   │        │  │  ├─ AdminDashboardServlet.java
+   │        │  │  ├─ CartServlet.java
+   │        │  │  ├─ ChangePasswordServlet.java
+   │        │  │  ├─ DeleteProductServlet.java
+   │        │  │  ├─ DeleteUserServlet.java
+   │        │  │  ├─ GetCategoriesServlet.java
+   │        │  │  ├─ GetUserServlet.java
+   │        │  │  ├─ ListUsersServlet.java
+   │        │  │  ├─ LogInController.java
+   │        │  │  ├─ LogOutController.java
+   │        │  │  ├─ OrderServlet.java
+   │        │  │  ├─ RegisterController.java
+   │        │  │  ├─ SalesReportServlet.java
+   │        │  │  ├─ UpdateProductServlet.java
+   │        │  │  ├─ UpdateProfileServlet.java
+   │        │  │  └─ UpdateUserServlet.java
+   │        │  └─ ReadMe.md
+   │        ├─ filter/
+   │        │  └─ AuthenticationFilter.java
+   │        ├─ model/
+   │        │  ├─ Cart.java
+   │        │  ├─ CartItem.java
+   │        │  ├─ Category.java
+   │        │  ├─ Order.java
+   │        │  ├─ OrderItem.java
+   │        │  ├─ Products.java
+   │        │  ├─ Sale.java
+   │        │  └─ User.java
+   │        └─ utility/
+   │           └─ EncryptDecrypt.java
+   └─ webapp/
+      ├─ css/
+      │  ├─ about.css
+      │  ├─ admin.css
+      │  ├─ cart.css
+      │  ├─ headfoot.css
+      │  ├─ login.css
+      │  ├─ orderdetails.css
+      │  ├─ product.css
+      │  ├─ SalesReport.css
+      │  ├─ style.css
+      │  └─ userdashboard.css
+      ├─ db/
+      │  ├─ init.sql
+      │  ├─ README.md
+      │  └─ seed.sql
+      ├─ js/
+      │  ├─ admin.js
+      │  ├─ cart.js
+      │  ├─ login-modal.js
+      │  ├─ login.js
+      │  └─ script.js
+      ├─ META-INF/
+      │  └─ MANIFEST.MF
+      ├─ pages/
+      │  ├─ admin/
+      │  │  ├─ AddCategory.jsp
+      │  │  ├─ AddProduct.jsp
+      │  │  ├─ adminnav.jsp
+      │  │  ├─ Dashboard.jsp
+      │  │  ├─ DeleteProduct.jsp
+      │  │  ├─ SalesReport.jsp
+      │  │  └─ UpdateProduct.jsp
+      │  ├─ footercontents/
+      │  │  ├─ Contact.jsp
+      │  │  ├─ Privacy.jsp
+      │  │  ├─ Returns.jsp
+      │  │  ├─ Shipping.jsp
+      │  │  └─ Terms.jsp
+      │  ├─ includes/
+      │  │  ├─ Footer.jsp
+      │  │  ├─ Header.jsp
+      │  │  └─ messages.jsp
+      │  └─ user/
+      │     ├─ About.jsp
+      │     ├─ Cart.jsp
+      │     ├─ Dashboard.jsp
+      │     ├─ DeleteAccount.jsp
+      │     ├─ Login.jsp
+      │     ├─ OrderDetails.jsp
+      │     └─ Product.jsp
+      ├─ uploads/
+      │  ├─ binu.jpg
+      │  ├─ fishindex.jpeg
+      │  ├─ sadie.jpg
+      │  ├─ sadikshya.jpg
+      │  ├─ Snapchat-1682538797.jpg
+      │  └─ tilu.jpg
+      ├─ WEB-INF/
+      │  ├─ lib/
+      │  │  ├─ mysql-connector-j-9.3.0.jar
+      │  │  ├─ taglibs-standard-impl-1.2.5.jar
+      │  │  └─ taglibs-standard-spec-1.2.5.jar
+      │  └─ web.xml
+      └─ index.jsp

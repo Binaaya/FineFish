@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+    <display-name>FineFish Web Application</display-name>
+    
+    <!-- Welcome files -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Session configuration -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- Custom URL mappings -->
+    <servlet>
+        <servlet-name>AdminDashboard</servlet-name>
+        <servlet-class>com.FineFish.controller.servlet.AdminDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboard</servlet-name>
+        <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Set Dashboard.jsp to use AdminDashboardServlet -->
+    <servlet>
+        <servlet-name>AdminDashboardPage</servlet-name>
+        <jsp-file>/pages/admin/Dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboardPage</servlet-name>
+        <url-pattern>/pages/admin/Dashboard.jsp</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
